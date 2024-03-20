@@ -1,0 +1,13 @@
+#cluster-map {
+    width: 100%;
+    height: 500px;
+}
+
+#map {
+    width: 100%;
+    height: 300px;
+}
+
+.image-camp-size{
+    max-height: 350px; max-width: 350px;
+}
