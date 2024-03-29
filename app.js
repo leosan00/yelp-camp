@@ -24,7 +24,7 @@ const campgroundsRoutes = require('./routes/campgrounds.js');
 const reviewsRoutes = require('./routes/reviews.js');
 const userRoutes = require('./routes/users.js');
 
-const dbUrl= process.env.NODE_EV !== "production" ? 'mongodb://localhost:27017/yelp-camp': process.env.DB_URL;
+const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/yelp-camp';
 mongoose.connect(dbUrl)
 .then(() =>{
     console.log('CONNECTION OPEN');
